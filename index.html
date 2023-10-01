@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Add this to the head of your HTML -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlC2qKxAY+L/UAxUVYEl7F8eFd5yZ2e2C2E2R5V7ZGoA7" crossorigin="anonymous">
+ 
+
+<body>
+    
+    <div class="container">
+        <header>
+            <h1>GPA Calculator</h1>
+            <p>Calculate your GPA with ease using our simple and intuitive GPA calculator.</p>
+        
+        </header>
+        <div class="calculator">
+            <div id="courses">
+                <!-- Course input fields will be dynamically added here -->
+            </div>
+            <button onclick="addCourse()"><i class="fas fa-plus"></i> Add Course</button>
+            <button onclick="deleteCourse()"><i class="fas fa-trash-alt"></i> Delete Course</button>
+            <button onclick="calculateGPA()"><i class="fas fa-calculator"></i> Calculate GPA</button>
+            <button onclick="resetForm()"><i class="fas fa-undo"></i> Reset</button>
+            
+            
+            <div id="result"></div>
+        </div>
+        <!-- Updated HTML for the footer -->
+<footer>
+    <div class="footer-content">
+        <div class="social-icons">
+            <a href="https://www.facebook.com/yourpage" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/yourhandle" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/youraccount" target="_blank"><i class="fab fa-instagram"></i></a>
+            <!-- Add more social media icons as needed -->
+        </div>
+    </div>
+    <div class="additional-info">
+        <p>&copy; 2023 Your Website. All rights reserved.</p>
+        <!-- <p><a href="your-privacy-policy-url">Privacy Policy</a> | <a href="your-terms-url">Terms of Service</a></p -->
+            
+    </div>
+</footer>
+
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

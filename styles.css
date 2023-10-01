@@ -1,0 +1,187 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ecf0f1;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #2c3e50;
+}
+
+.container {
+    text-align: center;
+    flex: 1;
+}
+
+header {
+    background: linear-gradient(to right, #3498db, #6ab0de);
+    color: #fff;
+    padding: 20px;
+    border-radius: 15px 15px 0 0;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.calculator {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: 2px solid #3498db;
+    background-image: url('your-pattern-path.png');
+    background-size: cover;
+    margin: 20px;
+}
+
+button {
+    padding: 12px 20px;
+    margin: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    background: linear-gradient(to right, #3498db, #2980b9);
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border: 2px solid #2980b9;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Customize the primary button */
+button.primary {
+    background: linear-gradient(to right, #3498db, #2980b9);
+    border: 2px solid #2980b9;
+}
+
+/* Customize the secondary button */
+button.secondary {
+    background: linear-gradient(to right, #2ecc71, #27ae60);
+    border: 2px solid #27ae60;
+}
+
+/* Add a hover effect for all buttons */
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Add a hover effect for primary button */
+button.primary:hover {
+    background: linear-gradient(to right, #2980b9, #2471a3);
+    border: 2px solid #2471a3;
+}
+
+/* Add a hover effect for secondary button */
+button.secondary:hover {
+    background: linear-gradient(to right, #27ae60, #219954);
+    border: 2px solid #219954;
+}
+
+/* Add a click effect for all buttons */
+button:active {
+    background: linear-gradient(to right, #2980b9, #2471a3);
+}
+
+/* Add animation for buttons */
+@keyframes buttonAnimation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+button:hover, button:active {
+    animation: buttonAnimation 0.5s ease-in-out;
+}
+
+input {
+    padding: 10px;
+    margin: 20px;
+    font-size: 16px;
+    width: 50px;
+    text-align: center;
+    border: 2px solid #3498db;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#courses {
+    margin-bottom: 20px;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #2c3e50;
+}
+
+ /* Updated CSS to center-align text and icons within the footer */
+/* Updated CSS to center the social media icons */
+footer {
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px;
+    border-radius: 0 0 15px 15px;
+    margin-top: auto;
+    background-image: url('your-pattern-path.png');
+    border-top: 2px solid #2980b9;
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Center-align content horizontally */
+    align-items: center; /* Center-align content vertically */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center; /* Center-align content horizontally */
+    width: 100%;
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 15px; /* Add some space between icons */
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #ecf0f1; /* Change color on hover */
+}
+
+.contact-info {
+    text-align: left;
+}
+
+.additional-info {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.additional-info a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.additional-info a:hover {
+    text-decoration: underline;
+}
